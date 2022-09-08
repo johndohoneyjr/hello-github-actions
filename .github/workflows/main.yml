@@ -1,5 +1,8 @@
-name: A workflow for my Hello World file
-on: push
+name: Hello World file
+
+on:
+  repository_dispatch:
+    types: [opened]
 jobs:
   build:
     name: Hello world action
