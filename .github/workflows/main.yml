@@ -2,7 +2,7 @@ name: Hello World file
 
 on:
   repository_dispatch:
-    types: [opened]
+    types: [api-invoke]
 jobs:
   build:
     name: Hello world action
