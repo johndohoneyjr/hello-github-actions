@@ -13,3 +13,4 @@ jobs:
         with:
           MY_NAME: "John Dohoney"
       - run: 'echo "payload: ${{ toJson(github.event.client_payload) }}"'
+      - run: 'echo "field: ${{ github.event.client_payload.foo }}"'
