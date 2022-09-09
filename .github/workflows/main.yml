@@ -12,4 +12,4 @@ jobs:
       - uses: ./action-a
         with:
           MY_NAME: "John Dohoney"
-      - run: 'echo "field: ${{ github.event.client_payload.foo }}"'
+      - run: 'echo "payload: ${{ toJson(github.event.client_payload) }}"'
