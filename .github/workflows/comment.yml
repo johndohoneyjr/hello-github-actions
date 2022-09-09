@@ -28,7 +28,7 @@ jobs:
           github-token: "{% raw %}${{secrets.GITHUB_TOKEN}}{% endraw %}"
           script: |
             github.projects.createCard({
-            column_id: {{columnID}},
+            column_id: "Test ID",
             content_id: context.payload.issue.id,
             content_type: "Issue"
             });
