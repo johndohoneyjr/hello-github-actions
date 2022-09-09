@@ -27,7 +27,6 @@ jobs:
             github.projects.createCard({
             column: "Todo",
             project: "Comment Project",
-            content_id: context.payload.issue.id,
             repo: "johndohoneyjr/hello-github-actions",
             content_type: "Issue"
             });
